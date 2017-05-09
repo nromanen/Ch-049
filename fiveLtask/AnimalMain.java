@@ -20,7 +20,7 @@ public class AnimalMain {
 		for (AnimalTask1 an : animals) {
 			System.out.println(an.voice());
 			System.out.println(an.feed());
-			
+			System.out.println("-------------------");
 		}
 	}
 

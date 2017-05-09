@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class HomeWirk3Main {
 	public static void main(String[] args) {
 		int[] hw3 = new int[5];
-		int ctr = 0;
+		int index = 0;
 		System.out.println("Enter 5 integer numbers: ");
 
-		while (ctr < hw3.length) {
+		while (index < hw3.length) {
 
 			int ictr = new Scanner(System.in).nextInt();
-			hw3[ctr] = ictr;
-			ctr++;
+			hw3[index] = ictr;
+			index++;
 
 		}
 		System.out.print("Your array is [");
@@ -21,11 +21,11 @@ public class HomeWirk3Main {
 		}
 		System.out.println("]");
 
-		int occctr = 0;
+		int occurance = 0;
 		for (int i = 0; i < hw3.length; i++) {
 			if (hw3[i] > 0) {
-				occctr++;
-				if (occctr == 2) {
+				occurance++;
+				if (occurance == 2) {
 					System.out.println("Second positive number is in " + (i + 1) + " position");
 
 				}

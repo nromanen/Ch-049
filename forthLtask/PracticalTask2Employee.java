@@ -47,6 +47,8 @@ public class PracticalTask2Employee {
 		if (ourObject.getDepartmentNumber() == dep) {
 			System.out.println(ourObject.toString());
 			return true;
+		} else {
+			System.out.println("You enterd wrong department number.");
 		}
 		return false;
 

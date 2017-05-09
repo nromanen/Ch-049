@@ -7,14 +7,14 @@ public class PracticalTask1Main {
 		int[] ten = { -4, 3, 53, -53, 1, 0, 54, 23, -74, -9 };
 
 		int max = ten[0];
-		int maxctr = 0;
-		int ctr = 0;
-		while (ctr < ten.length) {
-			if (max < ten[ctr]) {
-				max = ten[ctr];
-				maxctr = ctr;
+		int maxcounter = 0;
+		int counter = 0;
+		while (counter < ten.length) {
+			if (max < ten[counter]) {
+				max = ten[counter];
+				maxcounter = counter;
 			}
-			ctr++;
+			counter++;
 		}
 
 		int sum = 0;
