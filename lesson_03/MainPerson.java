@@ -23,11 +23,8 @@ public class MainPerson {
             person.changeName("Roman");
         }
 
-		/*System.out.println(p1);
-		p1.age();
-		p1.changeName("Roman");
-		p1.input();*/
-        //p1.output();
+		p1.input();
 
+        p1.output();
     }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class StudentService2 {
 	
-	private Student[] students;
+	/*private Student[] students;
 	
 	
 	public Student[] getStudents() {
@@ -47,7 +47,7 @@ public class StudentService2 {
 	
 
 	
-	
+	*/
 
 }
 

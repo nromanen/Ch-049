@@ -6,6 +6,8 @@ public class Person {
 
     private String name;
     private int birthYear;
+    private int growth;
+    private int weight;
 
     public String getName() {return name;}
 
@@ -32,20 +34,18 @@ public class Person {
         System.out.println(getName() + " age is " + age);
     }
 
-    public int input(){
+    public void input(){
         Scanner sc = new Scanner(System.in);
-        int growth;
-        int weight;
         System.out.println("Enter growth for " + getName());
         growth = sc.nextInt();
         System.out.println("Enter wight for " + getName());
         weight = sc.nextInt();
         sc.close();
-        return growth + weight;
+
     }
 
     public void output(){
-        System.out.println("Person " + getName() + " growth and weight is " + input());
+        System.out.println("Person " + getName() + " growth is " + growth + " weight is " + weight);
     }
 
     public void changeName(String name){
