@@ -7,6 +7,22 @@ public class Student {
 	private String lastName;
 	private double rank;
 	private Group group;
+	private Course course;
+	
+	
+
+	public Student(String firstName, String lastName, double rank, Group group, Course course) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.rank = rank;
+		this.group = group;
+		this.course = course;
+	}
+
+	public Student() {
+		
+	}
 
 	public String getFirstName() {
 		return firstName;
@@ -66,6 +82,14 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "firstName=" + firstName + ", lastName=" + lastName + ", rank=" + rank + ", group=" + group;
+		return "firstName=" + firstName + ", lastName=" + lastName + ", rank=" + rank + ", group=" + group + " course " + course;
+	}
+
+	public Course getCourse() {
+		return course;
+	}
+
+	public void setCourse(Course course) {
+		this.course = course;
 	}
 }
