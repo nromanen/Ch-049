@@ -10,6 +10,7 @@ public class Array {
         for (int i = 0; i < a.length; i++) {
             System.out.println("Enter integer");
             a[i] = scanner.nextInt();
+            scanner.close();
         }
 
         System.out.println(Array.calculate(a));

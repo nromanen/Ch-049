@@ -15,6 +15,7 @@ public class Circle {
 
         System.out.print("Enter the radius: ");
         double r = Double.parseDouble (sc.nextLine());
+        sc.close();
 
         square = pi*r*r;
         length = 2*pi*r;

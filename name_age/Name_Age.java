@@ -15,6 +15,7 @@ public class Name_Age {
         name = sc.nextLine();
         System.out.println("How old you: ");
         age = Integer.parseInt(sc.nextLine());
+        sc.close();
 
         System.out.println("Your name is " + name + ". " + "You are " + age + ".");
     }

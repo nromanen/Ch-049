@@ -1,4 +1,4 @@
-package java8.test;
+/*package java8.test;
 
 import static org.junit.Assert.*;
 
@@ -44,4 +44,4 @@ public class StudentServiceTest {
 		
 	}
 
-}
+}*/

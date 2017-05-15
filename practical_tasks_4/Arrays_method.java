@@ -12,6 +12,7 @@ public class Arrays_method {
         System.out.println("Enter month number");
         Scanner scanner = new Scanner(System.in);
         int i = scanner.nextInt();
+        scanner.close();
         System.out.println("This month has " + month_days[i - 1] + " days");
     }
 }

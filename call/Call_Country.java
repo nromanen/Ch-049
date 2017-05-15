@@ -23,6 +23,7 @@ public class Call_Country{
 
         System.out.println("Enter time for Italy;");
         int timeItaly = Integer.parseInt(sc.nextLine());
+        sc.close();
 
         System.out.println(t1 + " " + t1.getSum(timeUsa));
         System.out.println(t1 + " " + t1.getSum(timeJapan));
