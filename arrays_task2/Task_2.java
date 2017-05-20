@@ -1,19 +1,23 @@
 package arrays_task2;
 
-import java.util.Scanner;
+import java.util.Random;
+//import java.util.Scanner;
 
-public class Array {
+public class Task_2 {
 
     public static void main(String[] args) {
         int a[] = new int[10];
-        Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
+        Random rm = new Random();
         for (int i = 0; i < a.length; i++) {
-            System.out.println("Enter integer");
-            a[i] = scanner.nextInt();
-            scanner.close();
+            //System.out.println("Enter integer");
+            a[i] = rm.nextInt(20)-10;            
         }
-
-        System.out.println(Array.calculate(a));
+        for (int x: a){
+        	System.out.print(x + ", ");
+        } 
+        System.out.println();
+        System.out.println(Task_2.calculate(a));
     }
 
     public static int calculate(int[] numeric) {

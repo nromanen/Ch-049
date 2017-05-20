@@ -2,7 +2,7 @@ package practical_tasks_4;
 
 import java.util.Scanner;
 
-public class Arrays_method {
+public class Task_1 {
 
     public static void main (String [] args){
 
