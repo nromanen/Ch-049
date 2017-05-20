@@ -1,17 +1,16 @@
-package call;
+package lesson_01;
 
 import java.util.Scanner;
 
-public class Call_Country{
-
-    public static void main(String [] args){
-        Tarriff t1 = new Tarriff();
+public class Call {
+	public static void main(String [] args){
+        Call_Tariff t1 = new Call_Tariff();
         t1.setCountry("Usa");
         t1.setPrice(4);
-        Tarriff t2 = new Tarriff();
+        Call_Tariff t2 = new Call_Tariff();
         t2.setCountry("Japan");
         t2.setPrice(7);
-        Tarriff t3 = new Tarriff();
+        Call_Tariff t3 = new Call_Tariff();
         t3.setCountry("Italy");
         t3.setPrice(3);
         Scanner sc = new Scanner(System.in);
@@ -30,4 +29,5 @@ public class Call_Country{
         System.out.println(t1 + " " + t1.getSum(timeItaly));
 
     }
+
 }

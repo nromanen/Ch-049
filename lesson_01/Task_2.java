@@ -1,11 +1,9 @@
-package name_age;
-
+package lesson_01;
 
 import java.util.Scanner;
 
-public class Name_Age {
-
-    public static void main (String [] args){
+public class Task_2 {
+	public static void main (String [] args){
 
         String name;
         int age;
@@ -19,4 +17,5 @@ public class Name_Age {
 
         System.out.println("Your name is " + name + ". " + "You are " + age + ".");
     }
+
 }

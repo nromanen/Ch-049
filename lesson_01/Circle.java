@@ -1,11 +1,9 @@
-package flower_bed;
-
+package lesson_01;
 
 import java.util.Scanner;
 
 public class Circle {
-
-    public static void main (String [] args){
+	public static void main (String [] args){
 
         double square;
         double length;
@@ -25,4 +23,5 @@ public class Circle {
 
         System.out.format("Length is %.2f\n", length);
     }
+
 }

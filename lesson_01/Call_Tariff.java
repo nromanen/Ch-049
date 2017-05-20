@@ -1,9 +1,7 @@
-package call;
+package lesson_01;
 
-
-public class Tarriff {
-
-    private String country;
+public class Call_Tariff {
+	private String country;
     private double price;
 
 
