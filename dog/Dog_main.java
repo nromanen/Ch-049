@@ -25,9 +25,8 @@ public class Dog_main {
         if(Example.getAge() < d2.getAge()){
             Example = d2;
         if(Example.getAge() < d3.getAge()) {
-            Example = d3;
+        	Example = d3;
         }
-
         }
         System.out.println(Example);
     }
