@@ -1,4 +1,4 @@
-package arrays_task2;
+package lesson_04;
 
 import java.util.Random;
 //import java.util.Scanner;

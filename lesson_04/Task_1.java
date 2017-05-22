@@ -1,8 +1,9 @@
-package practical_tasks_4;
+package lesson_04;
 
 import java.util.Scanner;
 
 public class Task_1 {
+
 
     public static void main (String [] args){
 
@@ -15,4 +16,5 @@ public class Task_1 {
         scanner.close();
         System.out.println("This month has " + month_days[i - 1] + " days");
     }
+
 }
