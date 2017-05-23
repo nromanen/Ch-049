@@ -13,12 +13,13 @@ public class PT2Names {
 		String yourString = s.nextLine();
 		s.close();
 
-		Pattern pFullName = Pattern.compile(
-				"^[A-Z]{1}[a-z]+[-]?[A-Z]?[a-z]+[\\s]{1}[A-Z]{1}[a-z]+[-]?[A-Z]?[a-z]+[\\s]{1}[A-Z]{1}[a-z]+$");
+		Pattern pFullName = Pattern
+				.compile("^[A-Z]{1}[a-z]+[-A-Z]?[a-z]+[\\s]{1}[A-Z]{1}[a-z]+[-A-Z]?[a-z]+[\\s]{1}[A-Z]{1}[a-z]+$");
 		Matcher mFullName = pFullName.matcher(yourString);
-		Pattern pSurname = Pattern.compile("^[A-Z]{1}[a-z]+[-]?[A-Z]?[a-z]+");
+		Pattern pSurname = Pattern.compile("[A-Z]{1}[a-z]+[-A-Z]?[a-z]+");
+
 		Matcher mSurname = pSurname.matcher(yourString);
-		Pattern pName = Pattern.compile("[\\s]{1}[A-Z]{1}[a-z]+[-]?[A-Z]?[a-z]+[\\s]{1}");
+		Pattern pName = Pattern.compile("[\\s]{1}[A-Z]{1}[a-z]+[-A-Z]?[a-z]+[\\s]{1}");
 		Matcher mName = pName.matcher(yourString);
 		Pattern pPatronimic = Pattern.compile("[A-Z]{1}[a-z]+$");
 		Matcher mPatronimic = pPatronimic.matcher(yourString);
