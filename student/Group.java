@@ -20,12 +20,22 @@ public class Group {
 	public String getName(){
 		return name;
 	}
+	
 		
-	ArrayList <Student> stList = new ArrayList<Student>();
+	public ArrayList<Student> getStList() {
+		return stList;
+	}
+	public void setStList(ArrayList<Student> stList) {
+		this.stList = stList;
+	}
+
+
+	ArrayList <Student> stList = new ArrayList<Student>();		
 	
 	public void addStudent(Student t){
 		stList.add(t);		
 	}
+
 	public void removeStudent(double mark){
 		Iterator <Student> iter = stList.iterator();
 		while(iter.hasNext()){
@@ -40,14 +50,19 @@ public class Group {
 	
 	String grJson = "";
 	
-	public String convFromStudToString(ArrayList <Student> stList) {
+	public String convFromGroupToString(Group group) {
 		ObjectMapper mapper= new ObjectMapper();		
 		try {
-			grJson = mapper.writeValueAsString(stList);
+			grJson = mapper.writeValueAsString(group);	
+			
 		} catch (JsonProcessingException e) {			
 			e.printStackTrace();
 		}
 		return grJson;
 		}
+	@Override
+	public String toString() {
+		return "Group name - " + name + ", stList = " + stList + ".";
+	}
 }
 

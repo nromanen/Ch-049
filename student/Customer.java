@@ -12,13 +12,18 @@ public class Customer implements IO {
 		String firstName = s.getFirstName();
 		String lastName = s.getLastName();
 		double mark = s.getMark();
-		return "Student name:" + "\n" + firstName + "\n" + lastName + "\n" + "Mark is - " + mark;
+		return firstName + "\n" + lastName + "\n"  + mark;
 	}
 
 	@Override
-	public Student convFromStringToStud(String str) throws JsonParseException, JsonMappingException, IOException {
-				
-		return null;
+	public Student convFromStringToStud(String str) throws JsonParseException, JsonMappingException, IOException {		
+		String [] st = str.split("\n");
+		Student stNew = new Student();
+		stNew.setFirstName(st[0]);
+		stNew.setLastName(st[1]);
+		double mark = Double.parseDouble(st[2]);
+		stNew.setMark(mark);
+		return stNew;
 	}
 
 }

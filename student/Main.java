@@ -2,6 +2,8 @@ package student;
 
 import java.util.Collections;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class Main {
 	public static void main (String[] arg){
 		
@@ -35,6 +37,8 @@ public class Main {
 			e.printStackTrace();
 		}
 		
+		 //// customer  ////
+		
 		IO io2 = new Customer();
 	    String customer = "";
 	    try{
@@ -43,10 +47,19 @@ public class Main {
 	    } catch (Exception e) {
 			e.printStackTrace();
 		}
+	    ////////
+	    try{
+	    	String customer1 = customer;
+	    	System.out.println(io2.convFromStringToStud(customer1) + "\n");
+	    } catch (Exception e) {
+			e.printStackTrace();
+		}	   
 	    		
 		//// group ////			
 		
-		String grJson = gr1.convFromStudToString(gr1.stList);
+	    
+	    System.out.println(gr1 + "\n" + "\n");
+		String grJson = gr1.convFromGroupToString(gr1);
 		System.out.println(grJson + "\n");
 		
 		for(Object o: gr1.stList){
@@ -82,6 +95,14 @@ public class Main {
 		
 		gr1.removeStudent(3.0);		
 		
+		ObjectMapper mapper= new ObjectMapper();		
+		try {
+			System.out.println(mapper.writeValueAsString(gr1));
+		
+		}catch(Exception e) {
+				e.printStackTrace();
+		}
 		}
 	}
+	
 
