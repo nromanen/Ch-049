@@ -18,8 +18,5 @@ public class JsonIo implements IO{
 	public Student convFromStringToStud(String str) throws JsonParseException, JsonMappingException, IOException {
 		ObjectMapper mapper= new ObjectMapper();
 		return mapper.readValue(str, Student.class);		
-		
 	}
-	
-
 }

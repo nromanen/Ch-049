@@ -2,6 +2,9 @@ package student;
 
 import java.util.Comparator;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Student {
 	
 	private String firstName;

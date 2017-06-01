@@ -2,8 +2,6 @@ package student;
 
 import java.util.Collections;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 public class Main {
 	public static void main (String[] arg){
 		
@@ -21,6 +19,8 @@ public class Main {
 		gr1.addStudent(st4);
 		gr1.addStudent(st5);
 		
+		////  Json  ////
+		
 		IO io= new JsonIo ();
 		String jsonS = "";
 		try {
@@ -29,7 +29,7 @@ public class Main {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+		////
 		try {			
 			Student newSt = io.convFromStringToStud(jsonS);
 			System.out.println(jsonS + " -- " + newSt + "\n");
@@ -47,7 +47,7 @@ public class Main {
 	    } catch (Exception e) {
 			e.printStackTrace();
 		}
-	    ////////
+	    ////
 	    try{
 	    	String customer1 = customer;
 	    	System.out.println(io2.convFromStringToStud(customer1) + "\n");
@@ -56,9 +56,8 @@ public class Main {
 		}	   
 	    		
 		//// group ////			
-		
 	    
-	    System.out.println(gr1 + "\n" + "\n");
+	    System.out.println(gr1 + "\n");
 		String grJson = gr1.convFromGroupToString(gr1);
 		System.out.println(grJson + "\n");
 		
@@ -93,15 +92,23 @@ public class Main {
 		
 		//// remove by mark  ////		
 		
-		gr1.removeStudent(3.0);		
+		gr1.removeStudent(3.0);
 		
-		ObjectMapper mapper= new ObjectMapper();		
+		////  XML format  ////
+		
+		IO io3 = new XmlIo();
 		try {
-			System.out.println(mapper.writeValueAsString(gr1));
-		
-		}catch(Exception e) {
-				e.printStackTrace();
+			System.out.println(io3.convFromStudToString(st1));
+		} catch (Exception e) {		
+			e.printStackTrace();
 		}
+		try {
+			String xmlString = io3.convFromStudToString(st1);		
+			System.out.println(io3.convFromStringToStud(xmlString));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
 		}
 	}
 	
