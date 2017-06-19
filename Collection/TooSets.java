@@ -36,21 +36,5 @@ public class TooSets {
         res.retainAll(set2);
         return res;
     }
-
-    /*public static void main(String [] args){
-        TooSets m1 = new TooSets();
-        m1.set1 = new LinkedHashSet<>();
-        m1.set2 = new LinkedHashSet<>();
-        m1.set1.add("a");
-        m1.set1.add("b");
-        m1.set1.add("c");
-        m1.set2.add("d");
-        m1.set2.add("a");
-        m1.set2.add("e");
-
-        System.out.println(m1.union());
-        System.out.println(m1.intersect());
-        System.out.println(m1.set1);
-
-    }*/
+   
 }

@@ -1,0 +1,1 @@
+{"name":"CH_049","stList":[{"firstName":"Masha","lastName":"Ivanova","mark":3.5},{"firstName":"Valia","lastName":"Petrova","mark":4.1},{"firstName":"Zina","lastName":"Top","mark":4.9},{"firstName":"Ala","lastName":"Vogan","mark":5.0}]}

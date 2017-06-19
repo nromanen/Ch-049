@@ -1,5 +1,6 @@
 package student;
 
+import java.io.File;
 import java.util.Collections;
 
 public class Main {
@@ -105,11 +106,27 @@ public class Main {
 		try {
 			String xmlString = io3.convFromStudToString(st1);		
 			System.out.println(io3.convFromStringToStud(xmlString));
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
+		} catch (Exception e) {			
 			e.printStackTrace();
-		}		
 		}
+		
+		ToFile tf = new ToFile();
+		File f1 = new File("D:\\Паша\\workspace\\IT Academy\\src\\student.txt");
+		File f2 = new File("D:\\Паша\\workspace\\IT Academy\\src\\group.txt");
+		
+		////  student to file  ////
+		
+		tf.writeFile(st2, f1);
+		
+		System.out.println(tf.readFromFile(f1));
+		
+		////  group to file  ////
+		
+        tf.writeFile(gr1, f2);
+		
+		System.out.println(tf.readFromFile(f2));
+		}	
+	
 	}
 	
 

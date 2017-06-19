@@ -20,5 +20,6 @@ public class Main {
         System.out.println(m1.union());
         System.out.println(m1.intersect());
         System.out.println(m1.getSet1());
+        System.out.println(m1.getSet2());
     }
 }
